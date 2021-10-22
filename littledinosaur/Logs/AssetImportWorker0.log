@@ -541,3 +541,4 @@ Received Import Request.
 Start importing Assets/動畫/小恐龍.controller using Guid(3a2a4217aee5b004e880966fbc813f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b9bc4b1d98dae8b3872d60d1791d951') in 0.006702 seconds 
   Import took 0.011988 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
