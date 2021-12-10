@@ -2922,7 +2922,7 @@ GameObject:
   - component: {fileID: 1219616294}
   - component: {fileID: 1219616293}
   m_Layer: 0
-  m_Name: "\u7A0B\u5E8F"
+  m_Name: "\u5C0D\u8A71\u7CFB\u7D71"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2941,6 +2941,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interval: 0.3
+  goDialogue: {fileID: 1180104250}
+  textContent: {fileID: 315918440}
 --- !u!4 &1219616294
 Transform:
   m_ObjectHideFlags: 0

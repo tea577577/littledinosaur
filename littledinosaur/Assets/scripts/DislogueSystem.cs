@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 /// <summary>
@@ -10,6 +11,10 @@ public class DislogueSystem : MonoBehaviour
 {
     [Header("對話間隔"), Range(0, 1)]
     public float interval = 0.3f;
+    [Header("畫布對話系統")]
+    public GameObject goDialogue;
+    [Header("對話內容")]
+    public Text textContent;
 
     private void Start()
     {
