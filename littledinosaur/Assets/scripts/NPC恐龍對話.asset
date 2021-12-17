@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d70447d82a87f64699b9bb98a3cbcd5, type: 3}
   m_Name: "NPC\u6050\u9F8D\u5C0D\u8A71"
   m_EditorClassIdentifier: 
-  dislogues:
-  - "\u55E8"
-  - "\u53EF\u4EE5\u5E6B\u6211\u6BBA\u65C1\u908A\u90A3\u500B\u6703\u52D5\u7684\u6B7B\u4EBA\u55CE"
-  - 
+  dialogues:
+  - "\u5B89\u5B89\uFF0C\u4F60\u597D\uFF0C\u54C8\u56C9"
+  - "\u5E6B\u6211\u6BBA\u4ED6"

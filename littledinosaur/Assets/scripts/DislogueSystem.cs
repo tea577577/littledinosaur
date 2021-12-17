@@ -33,6 +33,8 @@ public class DislogueSystem : MonoBehaviour
 
 
     private IEnumerator TypeEffect(string[] contents)
+        
+
     {
         //更換名稱快捷鍵 Ctrl + R + R
         //測試用
@@ -62,5 +64,21 @@ public class DislogueSystem : MonoBehaviour
         }
 
         goDialogue.SetActive(false);                            //隱藏 對話物件
+    }
+    /// <summary>
+    /// 開始對話
+    /// </summary>
+    /// <param name="contents">要顯示打字效果的對話內容</param>
+    public void StartDialogue(string[] contents)
+    {
+        StartCoroutine(TypeEffect(contents));
+    }
+    /// <summary>
+    /// 停止對話
+    /// </summary>
+    public void StopDialogue()
+    {
+        StopAllCoroutines();             //停止協同程序
+        goDialogue.SetActive(false);     //隱藏對話介面
     }
 }

@@ -1052,6 +1052,7 @@ GameObject:
   - component: {fileID: 789906688}
   - component: {fileID: 789906687}
   - component: {fileID: 789906686}
+  - component: {fileID: 789906689}
   m_Layer: 0
   m_Name: "\u9AB7\u9ACF"
   m_TagString: Untagged
@@ -1143,6 +1144,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &789906689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789906685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88ecf6c17863f3341963e2a210cca314, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  v3TrackSize: {x: 1, y: 1, z: 1}
+  v3TrackOffset: {x: 0, y: 0, z: 0}
+  speed: 1.5
+  layerTarget:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &810461630
 GameObject:
   m_ObjectHideFlags: 0
@@ -3610,6 +3629,7 @@ GameObject:
   - component: {fileID: 2003507902}
   - component: {fileID: 2003507901}
   - component: {fileID: 2003507904}
+  - component: {fileID: 2003507905}
   m_Layer: 0
   m_Name: "NPC\u6050\u9F8D"
   m_TagString: Untagged
@@ -3727,6 +3747,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 3}
   m_EdgeRadius: 0
+--- !u!114 &2003507905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003507900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1be50382c22c5064ab90fb9c0c66f7c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Datadialogue: {fileID: 11400000, guid: d179d3941f1153c4284d2097fbdc314e, type: 2}
+  DialogueSystem: {fileID: 1219616293}
+  target: "\u6050\u9F8D"
 --- !u!1 &2018214414
 GameObject:
   m_ObjectHideFlags: 0

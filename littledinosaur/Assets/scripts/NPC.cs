@@ -13,6 +13,8 @@ public class NPC : MonoBehaviour
     public DataDia Datadialogue;
     [Header("對話系統")]
     public DislogueSystem DialogueSystem;
+    [Header("觸發對話的對象")]
+    public string target = "恐龍";
 
     // 觸發開始事件
     // 1.兩個物件都要有 collider 2D
@@ -20,7 +22,19 @@ public class NPC : MonoBehaviour
     // 3.兩個要有一個勾 is trigger
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("有東西進入區域了");
+        // print("碰到");
+        if (collision.name == target)
+        {
+            DialogueSystem.StartDialogue(Datadialogue.dialogues);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.name == target)
+        {
+            DialogueSystem.StopDialogue();
+        }
     }
 }
 

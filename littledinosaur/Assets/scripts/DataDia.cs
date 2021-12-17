@@ -11,5 +11,5 @@ public class DataDia : ScriptableObject
 {
     // text Area (程︽计程︽计) - 度string
     [Header("癸杠ず甧"), TextArea(3, 5)]
-    public string[] dislogues;
+    public string[] dialogues;
 }
