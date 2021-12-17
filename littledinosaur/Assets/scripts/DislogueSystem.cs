@@ -49,12 +49,12 @@ public class DislogueSystem : MonoBehaviour
             textContent.text = "";                              //清除上次對話內容
             goTip.SetActive(false);                             //隱藏 顯示圖示 三角形
 
-            for (int i = 0; i < contents[j] .Length; i++)           //遍尋對每一個字
+            for (int i = 0; i < contents[j].Length; i++)           //遍尋對每一個字
             {
                 textContent.text += contents[j][i];                 //疊加對話內容介面
                 yield return new WaitForSeconds(interval);
             }
-        }
+        
 
         goTip.SetActive(true); 
 
@@ -62,7 +62,7 @@ public class DislogueSystem : MonoBehaviour
         {
             yield return null;                                  //等待 null 一個影格時間
         }
-
+        }
         goDialogue.SetActive(false);                            //隱藏 對話物件
     }
     /// <summary>
