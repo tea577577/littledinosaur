@@ -120,6 +120,7 @@ public class contreller2D : MonoBehaviour
         //當 水平直 不等於零 勾選 走路參數
         ani.SetBool(parameterWalk, h != 0);
     }
+    
     ///<summary>
     /// 翻面：
     /// h值 小於0 左：角度 y 180
